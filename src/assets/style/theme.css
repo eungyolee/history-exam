@@ -1,0 +1,91 @@
+:root {
+  --main-color1: #191919;
+  --main-color2: #646464;
+
+  --gray0: #f8f9fa;
+  --gray1: #f1f3f5;
+  --gray2: #e9ecef;
+  --gray3: #dee2e6;
+  --gray4: #ced4da;
+  --gray5: #adb5bd;
+  --gray6: #868e96;
+  --gray7: #495057;
+  --gray8: #343a40;
+  --gray9: #212529;
+
+  --bg-black: #000000ab;
+
+  --flat-purple: #6c63ff;
+  --flat-blue: #536dfe;
+  --flat-light-blue: #00b0ff;
+  --flat-green: #1abc9c;
+  --flat-yellow: #f1c40f;
+  --flat-red: #ff6449;
+  --flat-black: #121212;
+
+  --correct: #41b3ff;
+}
+
+bold {
+  font-weight: bold;
+}
+
+button {
+  color: #fff;
+
+  padding: 10px 0;
+
+  border: 1px solid var(--main-color1);
+  border-radius: 12px;
+  background-color: var(--main-color1);
+
+  cursor: pointer;
+}
+
+button.enabled-none {
+  opacity: 0.2;
+  cursor: unset;
+}
+
+button.only-border {
+  color: var(--flat-black);
+  background-color: transparent;
+  border: 2px solid var(--main-color1);
+}
+
+button:not(.enabled-none):active {
+  opacity: 0.7;
+  transform: scale(0.985);
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 70px;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  padding: 16px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.none-dragging {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
