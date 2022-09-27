@@ -22,6 +22,17 @@
           </button>
           <button @click="nextClick" class="next">다음</button>
         </div>
+        <router-link
+          to="/"
+          style="
+            color: black;
+            margin-top: 30px;
+            font-size: 1.25rem;
+            text-align: center;
+          "
+        >
+          홈으로 가기
+        </router-link>
       </div>
     </div>
     <Footer />

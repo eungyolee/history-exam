@@ -7,7 +7,6 @@
         역사 공부를 합시다.
       </h2>
       <h3>원하는 모드를 선택해주세요.</h3>
-
       <nav class="button-wrap">
         <button
           @click="$router.push({ name: 'questionWord', params: { mode: 1 } })"
@@ -16,6 +15,12 @@
           <span class="bold">중간고사</span>
         </button>
       </nav>
+      <router-link
+        to="/word"
+        style="color: black; margin-top: 30px; font-size: 1.25rem"
+      >
+        정답 보러 가기
+      </router-link>
     </div>
 
     <Footer />

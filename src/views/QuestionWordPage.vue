@@ -31,12 +31,10 @@
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from "@/components/Footer";
 import * as util from "./../util/util.js";
 import wordData from "./../data/wordData";
 
@@ -57,9 +55,6 @@ export default {
 
       questionMode: this.$route.params.mode,
     };
-  },
-  components: {
-    Footer,
   },
   methods: {
     setQuestion() {
@@ -222,10 +217,6 @@ h2 {
 
     padding: 8px 0px;
     border-radius: 8px;
-  }
-
-  footer {
-    margin-top: 0px;
   }
 }
 </style>
