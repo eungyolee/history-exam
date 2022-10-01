@@ -20,7 +20,13 @@
           >
             이전
           </button>
-          <button @click="nextClick" class="next">다음</button>
+          <button
+            @click="nextClick"
+            class="next"
+            :class="{ 'enabled-none': idx === 83 }"
+          >
+            다음
+          </button>
         </div>
         <router-link
           to="/"
@@ -70,7 +76,7 @@ export default {
       if (this.idx !== 0) this.idx--;
     },
     nextClick() {
-      this.idx++;
+      if (this.idx < 84) this.idx++;
     },
   },
   watch: {
